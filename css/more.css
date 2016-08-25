@@ -1,0 +1,232 @@
+#moreList {
+	width: 100%;
+	background-color: #efefef;
+}
+
+#moreList li {
+	border: 1px solid #dfdfdf;
+	font-size: 1.6rem;
+	padding: 20px;
+	height: 10%;
+	text-align: left;
+	background-color: #fff;
+}
+
+#moreList li a {
+	color: #000000;
+}
+
+.fangda {
+	transform: rotateZ(90deg);
+}
+
+.morejian {
+	width: 20px;
+	transform: rotateZ(270deg);
+	float: right;
+	padding: 8px 10px;
+}
+
+/*常见问题*/
+
+.question {
+	padding: 20% 0;
+}
+.question p{
+	font-size: 1.6rem;
+	text-align: left;
+	padding: 0 20px;
+}
+
+#questionList {
+	text-align: left;
+}
+#questionList li {
+	font-size: 1.6rem;
+	background-color: #DFDFDF;
+	border-bottom: 1px solid #C8C8C8;
+	padding: 10px 5px;
+}
+
+
+/*基本资料头像*/
+.touxiang {
+	border-radius: 40px;
+	float: right;
+}
+
+/*订单*/
+
+.shengji {
+	background-color: #DFDFDF;
+	display: inline-block;
+}
+.shengjixin {
+	display: inline-block;
+	width: 76%;
+	vertical-align: top;
+}
+
+.addshou{
+	background-color: #FFFFFF;
+	text-align: left;
+}
+
+.addshou p {
+	padding: 8px 10px;
+	font-size: 1.6rem;
+}
+
+#xuqiumiao {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.daifa {
+	padding: 10px 5px;
+	border-bottom: 1px solid #C8C8C8; 
+	color: #000000;
+}
+
+#dingxinxi {
+	background-color: #FFFFFF;
+	text-align: left;
+	padding: 20px;
+	font-size: 1.4rem;
+	height: 150px;
+}
+
+/*我的订单*/
+#dingList {
+	background-color: #FFFFFF;
+	font-size: 1.6rem;
+	width: 100%;
+	padding: 10px 5px 0px 5px;
+	text-align: center;
+}
+
+#dingList li {
+	display: inline-block;
+	width: 18%;
+
+}
+
+#dingList li a {
+	color: #000000;
+}
+
+.choding {
+	border-bottom: 2px solid #e86700;
+}
+
+.quxiao {
+	border: 1px solid #C8C8C8;
+	padding: 3px 0px;
+	border-radius: 5px;
+	color: #000000;
+	float: right;
+	margin: 0px 5px;
+	width: 20%;
+	text-align: center;
+}
+
+
+/*退货*/
+
+#tuihuo {
+	color: #000000;
+	border: 1px solid #C8C8C8;
+	padding: 3px 8px;
+	border-radius: 5px;
+	float: right;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+
+#pinglun {
+	width:98%;
+	border:none;
+	height: 100px;
+	background-color: #fff;
+	resize: none;
+	font-size: 1.6rem;
+}
+
+#tuikuanhead {
+	background-color: #DFDFDF;
+	height: 30px;
+}
+
+#tuikuanhead span {
+		color: #ABABAB;
+		float: left;
+		padding: 5px 10px;
+		font-size: 1.6rem;
+}
+
+#tuikuanhead img {
+	width: 14px;
+	float: right;
+	padding: 5px 10px;
+}
+
+#tuimain {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.6rem;
+}
+
+#tuiList {
+	float: left;
+}
+#tuiList li {
+	float: left;
+	text-align: left;
+	margin: 10px 0;
+}
+
+.tuiselect {
+	width: 170px;
+	font-size: 1.4rem;
+	border: none;
+	height: 30px;
+	background: url(../images/mine/select.png)no-repeat 140px 0;
+	background-size: 30px 30px;
+}
+
+#money {
+	border: 1px solid #C8C8C8;
+	width: 170px;
+	height: 30px;
+}
+
+#shuo {
+	border: none;
+	border: 1px solid #C8C8C8;
+	width: 170px;
+	height: 60px;
+}
+
+#uptu {
+	display: none;
+}
+
+#uptupian{
+	color: #000000;
+	background-color: #EBEBEB;
+	font-size: 1.3rem;
+	padding: 8px 12px;
+	border: 1px solid #C8C8C8;
+}
+
+.fantu img{
+	width: 30%;
+	display: inline-block;
+}
+
+#tuihuodan a{
+	color: #FFFFFF;
+	background-color: #EC7D0B;
+	padding: 10px 20px;
+	border-radius: 10px;
+}

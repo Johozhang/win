@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/shangpin.css" />
+	</head>
+
+	<body>
+		<div id="wrap">
+			<!--这是头部-->
+			<div id="head" style="background: linear-gradient(180deg, #a5a5a5,#fff);">
+				<a href="index.html" class="fanhui"><img src="images/city.png" alt="" class="fangda" /></a>
+				<a href="javascript:void(0)"><img src="images/fenxiang.png" alt="" class="fenxiang" id="fenxiang" /></a>
+				<a href="javascript:void(0)"><img src="images/shoucang.png" alt="" class="fenxiang"/></a>
+			</div>
+
+			<!--详图-->
+			<div id="xiangtu" class="clearfix">
+				<img style="width: 58%;	margin: 20px auto;" src="images/huawei.png" />
+			</div>
+
+			<!--详情-->
+			<div class="xiangqing">
+				<p style="color: black;">Huawei/华为 荣耀7 全网通4G手机</p>
+				<div class="xiangqingjiage">
+					<span style="color: red;">￥11.5</span>
+					<span style="margin-right: 0;">原价</span>
+					<span style="margin-left: 0;text-decoration:line-through">￥12.8</span>
+					<span style="float: right;">销量：12345</span>
+				</div>
+				<div>
+					<span>限时：2天23分02秒</span>
+					<span style="float: right;">限量：120件</span>
+				</div>
+			</div>
+
+			<!--评价-->
+			<div id="pingjia">
+				<div class="pingjiaye">
+					<div><span id="shang" style="padding: 10px;" class="chored">商品详情</span></div>
+					<div><span id="yong" style="padding: 10px;">用户评价</span></div>
+				</div>
+				<div id="shangxiang" class="shangpinxiangqing"><img src="images/hexin.png" /></div>
+				<div id="pingxiang" class="pingjiaxianqing" style="display: none;">
+					<p class="clearfix"><span style="float: left;">小球✨✨✨✨✨</span><span style="float: right;">2015-10-05</span></p>
+					<p style="float: left;">挺难看的，不买了</p>
+				</div>
+			</div>
+
+			<!--footer-->
+			<div id="footer">
+				<a href=""><img src="images/car.png" /></a>
+				<div class="gouwu">
+					<a href="javascript:void(0)" style="background-color: red;" id="liuyanBtn">立即购买</a>
+					<a href="" style="background-color: orange;">加入购物车</a>
+				</div>
+			</div>
+		</div>
+
+		<!--签到-->
+		<div id="liuyan">
+			<div id="liuyankuan">
+				<div id="liuyan_head">
+					<img id="liuyankuan" src="images/qiandao.png" />
+				</div>
+			</div>				
+			</div>
+			<!--分享-->
+			<div id="fenxiangye">
+				<div id="fenxiangfooter">
+					<p style="font-size: 1.6rem;margin-left:-30px;">分享到</p>
+					<a href=""><img src="images/weibo.png" alt="" /></a>
+					<a href=""><img src="images/pengyou.png" alt="" /></a>
+					<a href=""><img src="images/weixin.png" alt="" /></a>
+					<a href="javascript:void(0)" id="fenqu">取消</a>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/jquery.min.js">
+			</script>
+			<script type="text/javascript">
+				var shang = document.getElementById("shang");
+				var yong = document.getElementById("yong");
+				var shangxiang = document.getElementById("shangxiang");
+				var pingxiang = document.getElementById("pingxiang");
+				var mai = document.getElementById("mai");
+				shang.onclick = function() {
+					shangxiang.style.display = "block";
+					pingxiang.style.display = "none";
+					$("#shang").addClass("chored");
+					$("#yong").removeClass("chored");
+				}
+				yong.onclick = function() {
+						shangxiang.style.display = "none";
+						pingxiang.style.display = "block";
+						$("#yong").addClass("chored");
+						$("#shang").removeClass("chored");
+					}
+					//			签到
+				var liuyan = document.getElementById("liuyan");
+				var liuyanBtn = document.getElementById("liuyanBtn");
+				var liuyankuan = document.getElementById("liuyankuan")
+
+				liuyanBtn.onclick = function() {
+					liuyan.style.display = "block";
+				}
+				liuyan.onclick = function() {
+					liuyan.style.display = "none";
+				}
+				liuyankuan.addEventListener("click", function(e) {
+					var e = e || window.event;
+					e.stopPropagation();
+				}, false)
+
+				//			分享
+				var fen = document.getElementById("fenxiang");
+				var fenye = document.getElementById("fenxiangye");
+				var fenf = document.getElementById("fenxiangfooter");
+				var fenq = document.getElementById("fenqu");
+				fen.onclick = function() {
+					fenye.style.display = "block";
+				}
+				fenye.onclick = function() {
+					fenye.style.display = "none";
+				}
+				fenq.onclick = function() {
+					fenye.style.display = "none";
+				}
+				fenf.addEventListener("click", function(e) {
+					var e = e || window.event;
+					e.stopPropagation();
+				}, false)
+			</script>
+
+	</body>
+
+</html>

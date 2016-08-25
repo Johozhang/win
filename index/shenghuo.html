@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../src/dist/idangerous.swiper.css">
+		<link rel="stylesheet" type="text/css" href="../src/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../src/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../src/css/shangjia.css" />
+		<style type="text/css">
+			.swiper-active-switch {
+				background: #FFFFFF;
+			}
+			.fangda {
+				transform: rotateZ(90deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<!--这是头部-->
+			<div id="head">
+				<a href="city.html" class="city"><img src="../src/images/city.png" alt="" class="fangda" /></a>
+				<span class="shenghuo">生活食品</span>
+			</div>
+
+			<!--这是banner-->
+
+			<div id="banner" class="swiper-container">
+				<div id="inner" class="swiper-wrapper">
+					<!--div.swiper-slide*5>(img)-->
+					<div class="swiper-slide"><img src="../src/images/shangjia.png" alt="" /></div>
+					<div class="swiper-slide"><img src="../srimages/shangjia.png" alt="" /></div>
+					<div class="swiper-slide"><img src="images/shangjia.png" alt="" /></div>
+					<div class="swiper-slide"><img src="images/shangjia.png" alt="" /></div>
+					<div class="swiper-slide"><img src="images/shangjia.png" alt="" /></div>
+				</div>
+				<div class="pagination" id="pagination"></div>
+			</div>
+
+			<!--这是lefemain-->
+			<div id="main" class="clearfix">
+				<!--评价-->
+				<div id="pingjia">
+					<ul id="shangjia">
+						<li class="choshang">
+							<a href="javascript:void(0)">很好吃的</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">有点好吃</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">超级好吃</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">绝对好吃</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">好好的吃</a>
+						</li>
+					</ul>
+					<div id="shangxiang" class="shangpinxiangqing ">
+						<ul>
+							<li class="clearfix">
+								<a href="">
+									<img src="images/wozhiwo.png" alt="" />
+									<div style="float: left; ">
+										<p style="color: #000000;font-size: 1.6rem;">沃之沃 多功能收纳盒<br />内衣盒六件套</p>
+										<p style="font-size: 1.7rem;">
+											<span style="color: red;">￥11.5</span>
+											<span style="margin-right: 0;">原价</span>
+											<span style="margin-left: 0;text-decoration:line-through">￥12.8</span>
+										</p>
+
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="">
+									<img src="images/wozhiwo.png" alt="" />
+									<div style="float: left; ">
+										<p style="color: #000000;font-size: 1.6rem;">沃之沃 多功能收纳盒<br />内衣盒六件套</p>
+										<p style="font-size: 1.7rem;">
+											<span style="color: red;">￥11.5</span>
+											<span style="margin-right: 0;">原价</span>
+											<span style="margin-left: 0;text-decoration:line-through">￥12.8</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="">
+									<img src="images/wozhiwo.png" alt="" />
+									<div style="float: left; ">
+										<p style="color: #000000;font-size: 1.6rem;">沃之沃 多功能收纳盒<br />内衣盒六件套</p>
+										<p style="font-size: 1.7rem;">
+											<span style="color: red;">￥11.5</span>
+											<span style="margin-right: 0;">原价</span>
+											<span style="margin-left: 0;text-decoration:line-through">￥12.8</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="">
+									<img src="images/wozhiwo.png" alt="" />
+									<div style="float: left; ">
+										<p style="color: #000000;font-size: 1.6rem;">沃之沃 多功能收纳盒<br />内衣盒六件套</p>
+										<p style="font-size: 1.7rem;">
+											<span style="color: red;">￥11.5</span>
+											<span style="margin-right: 0;">原价</span>
+											<span style="margin-left: 0;text-decoration:line-through">￥12.8</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix">
+								<a href="">
+									<img src="images/wozhiwo.png" alt="" />
+									<div style="float: left; ">
+										<p style="color: #000000;font-size: 1.6rem;">沃之沃 多功能收纳盒<br />内衣盒六件套</p>
+										<p style="font-size: 1.7rem;">
+											<span style="color: red;">￥11.5</span>
+											<span style="margin-right: 0;">原价</span>
+											<span style="margin-left: 0;text-decoration:line-through">￥12.8</span>
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="dist/idangerous.swiper.min.js">
+		</script>
+		<script type="text/javascript">
+			new Swiper(".swiper-container", {
+				autoplay: 2000,
+				speed: 2000, //控制速度，滑动时间
+				loop: true, // 循环
+				pagination: ".pagination", //分页器
+				paginationClickable: true, //小圆点是否可点
+			});
+
+			$("#shangjia>li").on("click", function() {
+				$(this).addClass("choshang").siblings().removeClass("choshang")
+			})
+		</script>
+	</body>
+
+</html>

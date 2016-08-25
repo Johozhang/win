@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<style type="text/css">
+			.fangda {
+				transform: rotateZ(90deg);
+			}
+			#footer {
+				max-width: 664px;
+				position: fixed;
+				bottom: 0;
+			}
+			.sou {
+				top: 18%;			
+				left: 8%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" class="clearfix">
+			<!--这是头部-->
+			<div id="head" class="clearfix">
+				<a href="index.html" class="city"><img src="images/city.png" alt="" class="fangda"/></a>
+				<span class="shenghuo">一键客服</span>
+			</div>
+			
+			<!--这是联系-->
+			
+			<div id="lianxi" class="clearfix">
+				<p class="clearfix">联系信息：</p>
+				<div class="xingming">
+					<p><span style="width: 30%;">姓　　名：</span><input type="text" style="border: none;width: 70%;"/></p>
+					<p><span style="width: 30%;">联系方式：</span><input type="text"  style="border: none;width: 70%;"/></p>
+				</div>
+			</div>
+			
+			<!--这是需求-->
+			<div id="xuqiu" class="clearfix">
+				<p class="clearfix">需求类型：</p>
+				<div class="xingming">
+					<input type="text"  style="border: none;" placeholder="输入商业合作/商品入驻/广告加盟等需求类型"/>
+				</div>
+			</div>
+			
+			<!--需求描述-->
+			<div id="xuqiumiao">
+				<p class="clearfix">需求描述：</p>
+				<div class="xingming">
+					<textarea name="" rows="" cols="" placeholder="请根据需求类型，输入详细的合作模式（如：商品入驻，请注明具体商品、数量等），平台会在第一时间与您进行沟通联系。"></textarea>
+				</div>
+			</div>
+			<p id="jinggao"><img src="images/weixian.png" alt="" style="width: 6%;display: inline;"/><span style="width: 94%;font-size: 1.6rem;">需求提交后，平台会在第一时间与您联系。</span></p>
+			
+			<input type="button" name="liuyantijiao" id="liuyantijiao" value="确定" />
+	
+		</div>
+		<!--<script type="text/javascript">
+			var liuyan = document.getElementById("liuyan");
+			var liuyanBtn = document.getElementById("liuyanBtn");
+			var liuyankuan = document.getElementById("liuyankuan")
+			var closex = document.getElementById("closex");
+			liuyanBtn.onclick = function() {
+				liuyan.style.display = "block";
+			}
+			closex.onclick = function() {
+				liuyan.style.display = "none";
+			}
+			liuyan.onclick = function() {
+				liuyan.style.display = "none";
+			}
+			liuyankuan.addEventListener("click",function(e){
+				var e = e || window.event;
+				e.stopPropagation();
+			},false)
+		</script>-->
+	</body>
+</html>

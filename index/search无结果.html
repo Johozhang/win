@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<style type="text/css">
+			.fangda {
+				transform: rotateZ(90deg);
+			}
+			#footer {
+				max-width: 664px;
+				position: fixed;
+				bottom: 0;
+			}
+			.sou {
+				top: 18%;			
+				left: 8%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<!--这是头部-->
+			<div id="head" class="clearfix">
+				<a href="index.html" class="city"><img src="images/city.png" alt="" class="fangda"/></a>
+				<span class="shenghuo">搜索</span>
+			</div>
+			
+			<!--这是搜索-->
+			
+			<div id="search" class="clearfix">
+				<input type="" name="" id="" value="" class="search" placeholder="输入关键词/商品名称"/>
+				<img src="images/sou.png" alt="" class="sou"/>
+			</div>
+			
+			<div id="searchno">
+				<img src="images/kulian.png"/>
+				<p>抱歉，没有找到相关商品！<br />给我留言告诉你喜欢的东西吧</p>
+				<input type="button" name="" id="liuyanBtn" value="我要留言" />
+			</div>
+			
+			<!--这是footer-->
+			<div id="footer" class="clearfix">
+				<ul class="clearfix">
+					<li class="icon icon1"><a href="javascript:void(0);"></a></li>
+					<li class="icon icon2"><a href="javascript:void(0);"></a></li>
+					<li class="icon icon3"><a href="javascript:void(0);"></a></li>
+					<li class="icon icon4"><a href="javascript:void(0);"></a></li>
+					<li class="icon icon5"><a href="javascript:void(0);"></a></li>
+				</ul>
+			</div>	
+		</div>
+		<div id="liuyan">
+			<div id="liuyankuan">
+				<div id="liuyan_head">
+					<span style="color: #A4A4A4;font-size: 1.3rem;display: inline-block;">留言</span>
+					<img id="closex" src="images/x.png" style="width: 11px;float: right;padding-top:8px;"/>
+				</div>
+				<textarea id="liuyanqu" name="" rows="" cols="" placeholder="想买的什么商品？"></textarea>
+				<input type="button" name="liuyantijiao" id="liuyantijiao" value="提交" />
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			var liuyan = document.getElementById("liuyan");
+			var liuyanBtn = document.getElementById("liuyanBtn");
+			var liuyankuan = document.getElementById("liuyankuan")
+			var closex = document.getElementById("closex");
+			liuyanBtn.onclick = function() {
+				liuyan.style.display = "block";
+			}
+			closex.onclick = function() {
+				liuyan.style.display = "none";
+			}
+			liuyan.onclick = function() {
+				liuyan.style.display = "none";
+			}
+			liuyankuan.addEventListener("click",function(e){
+				var e = e || window.event;
+				e.stopPropagation();
+			},false)
+		</script>
+	</body>
+</html>
